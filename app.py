@@ -9,7 +9,18 @@ import pandas as pd
 
 # print(df.loc[["day2"]]) 
 
-# Reading CSV files
+## Reading CSV files
 df = pd.read_csv('data.csv')
 
-print(df.to_string)
+# df will only return first and last 5 rows, df.st_string() will return the entire dataset
+# print(df)
+
+# # check maximum rows returned
+# print(pd.options.display.max_rows)
+
+# # change max rows 
+# pd.options.display.max_rows = 9999
+# print(df)
+# print(pd.options.display.max_rows)
+
+## Reading JSON
